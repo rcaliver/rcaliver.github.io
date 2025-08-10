@@ -12,6 +12,9 @@ export function NavbarComponent() {
 
       <NavbarContent className="hidden sm:flex gap-4" justify="end">
         <NavbarItem>
+          <Link href="/">Home</Link>
+        </NavbarItem>
+        <NavbarItem>
           <Link href="/about">About</Link> 
         </NavbarItem>
         <NavbarItem>
