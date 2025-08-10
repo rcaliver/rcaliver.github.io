@@ -3,7 +3,7 @@
 import { Container } from "@/components/Container";
 import { PageSubtitle } from "@/components/PageSubtitle"
 import { PageTitle } from "@/components/PageTitle"
-import { Card, CardBody, CardHeader, CardFooter } from "@heroui/card";
+import { Card, CardHeader } from "@heroui/card";
 import { Image } from "@heroui/image";
 import { Chip } from "@heroui/chip";
 
