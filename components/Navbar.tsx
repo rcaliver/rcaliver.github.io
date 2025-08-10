@@ -18,9 +18,6 @@ export function NavbarComponent() {
           <Link href="/work">Work</Link> 
         </NavbarItem>
         <NavbarItem>
-          <Link href="/blog">Blog</Link>
-        </NavbarItem>
-        <NavbarItem>
           <Link href="/contact">Contact</Link>
         </NavbarItem>
       </NavbarContent>
