@@ -1,14 +1,16 @@
 import Link from "next/link";
+import { PageTitle } from "@/components/PageTitle";
+import { PageSubtitle } from "@/components/PageSubtitle";
+import { Container } from "@/components/Container";
 
 export default function Home() {
   return (
-    <div className="max-w-4xl mx-auto mt-36">
-      <h1 className="text-4xl font-sans text-center font-bold text-6xl/13 uppercase">
-        Hey, I&apos;m Rodrigo Silva but you can call me <span className="text-red-500">Caliver</span>!
-      </h1>
-      <div className="max-w-md mx-auto">
-        <p className="mt-13 text-lg text-center font-mono">I&apos;m a full stack developer with 12+ years of experience and an aspiring software architect</p>
-        <div className="mt-13 flex justify-between gap-4 text-center">
+    <Container margin={{ top: "mt-36" }}>
+      <PageTitle>Hey, I&apos;m Rodrigo Silva but you can call me <span className="text-red-500">Caliver</span>!</PageTitle>
+      <PageSubtitle>I&apos;m a full stack developer with 12+ years of experience and an aspiring software architect</PageSubtitle>
+
+      <Container size="md" margin={{ top: "mt-13", bottom: "mb-13" }}>
+        <div className="flex justify-between gap-4 text-center">
           <div className="flex items-center gap-2">
           <Link href="/work" className="text-lg font-mono">
             <span className="text-lg font-mono">→</span> see my work
@@ -20,7 +22,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </div>
-    </div>
+      </Container>
+    </Container>
   );
 }

@@ -6,22 +6,22 @@ export function NavbarComponent() {
     <Navbar shouldHideOnScroll isBordered>
       <NavbarBrand>
         <Link href="/">
-          <p className="text-2xl font-bold">Caliver</p>
+          <p className="text-2xl font-bold">caliver</p>
         </Link>
       </NavbarBrand>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="end">
         <NavbarItem>
-          <Link href="/">Home</Link>
+          <Link href="/">home</Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="/about">About</Link> 
+          <Link href="/about">about</Link> 
         </NavbarItem>
         <NavbarItem>
-          <Link href="/work">Work</Link> 
+          <Link href="/work">work</Link> 
         </NavbarItem>
         <NavbarItem>
-          <Link href="/contact">Contact</Link>
+          <Link href="/contact">contact</Link>
         </NavbarItem>
       </NavbarContent>
     </Navbar>
