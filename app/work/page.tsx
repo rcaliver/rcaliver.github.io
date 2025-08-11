@@ -9,15 +9,20 @@ import { Chip } from "@heroui/chip";
 import Link from "next/link";
 import { Button } from "@heroui/react";
 import projects from "@/public/projects.json";
+import { useMemo } from "react";
 
 export default function Work() {
+    const sortedProjects = useMemo(() => {
+        return projects.sort((a, b) => b.relevance - a.relevance);
+    }, []);
+
   return (
     <Container>
         <PageTitle>Recent work</PageTitle>
         <PageSubtitle>Explore case studies of projects that showcase tech expertise and business impact</PageSubtitle>
 
         <div className="grid mt-13 grid-cols-3 gap-4">
-            {projects.map((project) => (
+            {sortedProjects.map((project) => (
                 <Card
                     key={project.id}
                     className="rounded-lg overflow-hidden"
@@ -46,7 +51,7 @@ export default function Work() {
                         <Button
                             as={Link}
                             href={`/work/${project.id}`}
-                            variant="flat"
+                            variant="ghost"
                             color="primary"
                             className="w-full"
                             isIconOnly

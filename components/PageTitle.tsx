@@ -4,6 +4,6 @@ export function PageTitle({
     children: React.ReactNode
 }) {
   return (
-    <h1 className="mt-13 font-sans text-center font-bold text-6xl/13 uppercase">{children}</h1>
+    <h1 className="my-13 font-sans text-center font-bold text-6xl/13 uppercase">{children}</h1>
   );
 }

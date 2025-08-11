@@ -1,58 +1,200 @@
 [
     {
-        "id": "showup1",
-        "title": "SHOWUP1",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "image": "https://heroui.com/images/card-example-1.jpeg",
-        "tags": ["frontend", "backend", "infrastructure", "design", "system design", "software architecture", "ios", "android"],
-        "tech": ["Laravel 12", "Next.js", "Tailwind CSS", "MySQL", "Redis", "Docker", "AWS", "CI/CD", "Grafana", "Prometheus", "OpenTelemetry"]
+      "id": "lensly",
+      "title": "Lensly",
+      "year": 2025,
+      "role": "Founder & CTO",
+      "relevance": 98,
+      "description": "AI-driven photo curation SaaS for photographers. From batch upload to semantic search and prompt-based actions.",
+      "context": "Building an AI-assisted platform that helps photographers organize, curate and deliver albums faster.",
+      "challenge": "Handle large photo batches, provide quality/intent curation and enable a prompt-first UX simpler than traditional galleries.",
+      "solution": "Next.js front end with a persistent prompt bar; Laravel backend for orchestration; Redis caching; CLIP/OpenAI for technical+artistic scoring and semantic search; workers for heavy processing; CDN for delivery.",
+      "impacts": [
+        "Reduced manual triage by enabling prompt-first curation flows.",
+        "Higher perceived quality via AI ranking (technical + artistic scoring).",
+        "Faster album turnaround with background processing and CDN delivery.",
+        "Clear product story that differentiates from classic gallery tools."
+      ],
+      "image": "https://heroui.com/images/card-example-1.jpeg",
+      "tags": ["saas", "ai", "semantic search", "ux", "photo curation"],
+      "tech": ["Laravel 12", "Next.js", "Tailwind CSS", "PostgreSQL", "Redis", "Docker", "AWS S3/CloudFront", "OpenAI", "CLIP", "CI/CD"]
     },
     {
-        "id": "agency-analytics",
-        "title": "Agency Analytics",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "image": "https://heroui.com/images/card-example-2.jpeg",
-        "tags": ["frontend", "backend", "artificial intelligence", "database optimization"],
-        "tech": ["Laravel 12", "React", "MySQL", "Redis", "GCP", "Grafana", "Prometheus", "OpenTelemetry"]
+      "id": "agency-analytics",
+      "title": "Agency Analytics — AI Summary & Data Aggregation",
+      "year": 2024,
+      "role": "Senior Backend Engineer",
+      "relevance": 95,
+      "description": "Backend services to aggregate multi-widget data and generate AI summaries for marketing reports.",
+      "context": "Dashboards with dozens of widgets and multiple sources required reliable aggregation and automated insights.",
+      "challenge": "Move expensive aggregations to the server, reduce latency, and produce consistent AI summaries.",
+      "solution": "Laravel services for section-scoped data aggregation; Redis caching by section/date; standardized prompts for OpenAI; observability with tracing and metrics.",
+      "impacts": [
+        "More responsive dashboards and simpler front-end code.",
+        "Consistent summaries across sections through standardized prompting.",
+        "Lower compute waste via targeted caching and scoped APIs.",
+        "Actionable insights into hot paths thanks to tracing/metrics."
+      ],
+      "image": "https://heroui.com/images/card-example-2.jpeg",
+      "tags": ["backend", "ai", "data aggregation", "caching"],
+      "tech": ["Laravel 12", "React", "MySQL", "Redis", "GCP", "OpenAI", "Grafana", "Prometheus", "OpenTelemetry"]
     },
     {
-        "id": "pixieset",
-        "title": "Pixieset",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "image": "https://heroui.com/images/card-example-3.jpeg",
-        "tags": ["frontend", "backend", "infrastructure", "system design", "software architecture"],
-        "tech": ["Laravel 12", "MySQL", "Redis", "GCP", "Grafana", "Prometheus", "OpenTelemetry"]
+      "id": "pixieset",
+      "title": "Pixieset",
+      "year": 2023,
+      "role": "Full-Stack Engineer",
+      "relevance": 90,
+      "description": "Contributions to high-traffic photography tools: galleries, delivery and creator workflows.",
+      "context": "Large-scale platform supporting professional photographers and creators.",
+      "challenge": "Maintain feature velocity without compromising performance and reliability.",
+      "solution": "Full-stack contributions across Laravel services and React components; query-plan reviews; strategic caching; tighter DX and accessibility.",
+      "impacts": [
+        "Smoother creator workflows and sturdier foundations for new features.",
+        "Lower latency on critical paths through caching and query tuning.",
+        "Cleaner, more accessible UI components ready for reuse.",
+        "Risk-aware rollouts for high-traffic releases."
+      ],
+      "image": "https://heroui.com/images/card-example-3.jpeg",
+      "tags": ["frontend", "backend", "infrastructure", "system design"],
+      "tech": ["Laravel 12", "MySQL", "Redis", "GCP", "Docker", "Grafana", "Prometheus", "OpenTelemetry"]
     },
     {
-        "id": "carlton-one-engagement",
-        "title": "CarltonOne Engagement",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "image": "https://heroui.com/images/card-example-4.jpeg",
-        "tags": ["frontend", "backend", "data analysis"],
-        "tech": ["Laravel 12", "MySQL", "Redis", "GCP", "Grafana", "Prometheus", "OpenTelemetry"]
+      "id": "hypergrowth-mvp-orchestrator",
+      "title": "HyperGrowth MVP Orchestrator (n8n + LLMs)",
+      "year": 2025,
+      "role": "Architect & Automation Engineer",
+      "relevance": 85,
+      "description": "Automation pipeline that turns product ideas into MVP plans, backlogs and docs using AI agents.",
+      "context": "Compress discovery and planning time for internal and client MVPs.",
+      "challenge": "Coordinate inputs, knowledge bases, comms and governance with repeatability.",
+      "solution": "n8n workflows orchestrating LLM agents (OpenAI/Anthropic) to generate scope, user stories and docs; syncing to Notion, GitHub and Slack; guardrails for consistency.",
+      "impacts": [
+        "Shorter time-to-first-iteration with clearer scope.",
+        "Backlogs and docs generated with consistent quality.",
+        "Single source of truth across Notion/GitHub.",
+        "Repeatable prompts and policies to prevent drift."
+      ],
+      "image": "https://heroui.com/images/card-example-6.jpeg",
+      "tags": ["automation", "ai agents", "docs-as-code"],
+      "tech": ["n8n", "OpenAI", "Anthropic", "Notion API", "GitHub API", "Slack API", "Typeform"]
     },
     {
-        "id": "mpac",
-        "title": "Ministério Público do Acre",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "image": "https://heroui.com/images/card-example-5.jpeg",
-        "tags": ["frontend", "backend", "mobile", "infrastructure", "system design", "software architecture", "design"],
-        "tech": ["Laravel 12", "MySQL", "Redis", "GCP", "Grafana", "Prometheus", "OpenTelemetry"]
+      "id": "showup1",
+      "title": "SHOWUP1",
+      "year": 2024,
+      "role": "Full-Stack Developer",
+      "relevance": 80,
+      "description": "Professional network for artists, athletes and models with short-form video profiles.",
+      "context": "Discovery marketplace where talent is showcased via concise video reels.",
+      "challenge": "Fast uploads, moderation, scheduling and multi-platform reach.",
+      "solution": "Laravel + Next.js architecture; workers for media processing; CDN; Tailwind component library for consistent UI.",
+      "impacts": [
+        "Streamlined onboarding and clear path from profile to booking.",
+        "Reliable media pipeline with background processing and CDN.",
+        "Faster build-out via reusable UI components.",
+        "Reduced deployment friction with CI/CD."
+      ],
+      "image": "https://heroui.com/images/card-example-1.jpeg",
+      "tags": ["frontend", "backend", "infrastructure", "design", "system design", "architecture", "ios", "android"],
+      "tech": ["Laravel 12", "Next.js", "Tailwind CSS", "MySQL", "Redis", "Docker", "AWS", "CI/CD", "Grafana", "Prometheus", "OpenTelemetry"]
     },
     {
-        "id": "challenge-intercambio",
-        "title": "Challenge Intercambio",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "image": "https://heroui.com/images/card-example-6.jpeg",
-        "tags": ["frontend", "backend", "software architecture", "infrastructure", "system design", "design"],
-        "tech": ["Laravel 12", "MySQL", "Redis", "GCP", "Grafana", "Prometheus", "OpenTelemetry"]
+      "id": "caliver-labs-products",
+      "title": "Caliver Labs — Productized Templates & White-Label",
+      "year": 2025,
+      "role": "Founder & Tech Lead",
+      "relevance": 75,
+      "description": "Catalog of ready-to-ship templates (SaaS, APIs, automations) for fast client delivery.",
+      "context": "Offer affordable, time-boxed solutions to startups and solo founders.",
+      "challenge": "Balance customization with repeatability and cost control.",
+      "solution": "Library of Next.js/Laravel starters, n8n automations and deployment blueprints with clear SLAs and docs.",
+      "impacts": [
+        "Shorter lead time with predictable pricing.",
+        "Standardized deliverables (docs, scripts, IaC) reduce setup effort.",
+        "Opinionated starters for common SaaS patterns (auth, billing, CRUD).",
+        "Packaged automations keep scope aligned from intake to backlog."
+      ],
+      "image": "https://heroui.com/images/card-example-5.jpeg",
+      "tags": ["productized services", "templates", "white-label"],
+      "tech": ["Laravel 12", "Next.js", "Tailwind CSS", "PostgreSQL", "Redis", "Docker", "AWS", "n8n", "CI/CD"]
     },
     {
-        "id": "dub-solucoes",
-        "title": "Dub Soluções",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "image": "https://heroui.com/images/card-example-1.jpeg",
-        "tags": ["frontend", "backend", "mobile", "software architecture", "system design", "design", "ios", "android"],
-        "tech": ["Laravel 12", "MySQL", "Redis", "GCP", "Grafana", "Prometheus", "OpenTelemetry"]
+      "id": "carlton-one-engagement",
+      "title": "CarltonOne Engagement",
+      "year": 2022,
+      "role": "Backend Developer",
+      "relevance": 70,
+      "description": "Features and integrations for a global engagement/rewards platform.",
+      "context": "Mature product with complex partner integrations and compliance needs.",
+      "challenge": "Ship new capabilities without destabilizing critical paths.",
+      "solution": "Scoped Laravel services with strong boundaries; robust tests; staged rollouts; enhanced observability.",
+      "impacts": [
+        "Safer releases with fewer regressions on sensitive flows.",
+        "Isolated complexity through well-scoped services.",
+        "Improved visibility on partner integrations via metrics/traces."
+      ],
+      "image": "https://heroui.com/images/card-example-4.jpeg",
+      "tags": ["backend", "integrations", "data"],
+      "tech": ["Laravel", "MySQL", "Redis", "Docker", "GCP", "Grafana", "Prometheus", "OpenTelemetry"]
+    },
+    {
+      "id": "mpac",
+      "title": "Ministério Público do Acre (MPAC)",
+      "year": 2019,
+      "role": "Full-Stack Developer",
+      "relevance": 65,
+      "description": "Government systems for internal workflows, mobile access and reporting.",
+      "context": "Modernize processes and enable mobile-first access for non-technical staff.",
+      "challenge": "Balance security, reliability and usability across roles.",
+      "solution": "Laravel apps with role-based access; mobile-friendly views; auditable operations and logs.",
+      "impacts": [
+        "Clearer workflows and lower friction in daily operations.",
+        "Role-aware interfaces simplified routine tasks.",
+        "Audit trails improved accountability on sensitive actions.",
+        "Better onboarding thanks to documented processes."
+      ],
+      "image": "https://heroui.com/images/card-example-5.jpeg",
+      "tags": ["frontend", "backend", "mobile", "infrastructure", "system design", "architecture", "design"],
+      "tech": ["Laravel", "MySQL", "Redis", "Docker", "Grafana", "Prometheus", "OpenTelemetry"]
+    },
+    {
+      "id": "challenge-intercambio",
+      "title": "Challenge Intercâmbio",
+      "year": 2018,
+      "role": "Full-Stack Developer",
+      "relevance": 60,
+      "description": "Web platform for education travel — leads, sales pipeline and student journey.",
+      "context": "Digitalize end-to-end processes for an education travel agency.",
+      "challenge": "Track leads → quotes → enrollment and keep data in sync.",
+      "solution": "Laravel back office + public site; staged pipelines; notifications and exports.",
+      "impacts": [
+        "Better visibility across the sales and enrollment pipeline.",
+        "Automated status changes reduced manual work.",
+        "Decision-making improved with basic analytics and exports.",
+        "Higher reliability compared to legacy spreadsheets."
+      ],
+      "image": "https://heroui.com/images/card-example-6.jpeg",
+      "tags": ["frontend", "backend", "architecture", "infrastructure", "system design", "design"],
+      "tech": ["Laravel", "MySQL", "Redis", "Docker"]
+    },
+    {
+      "id": "dub-solucoes",
+      "title": "Dub Soluções",
+      "year": 2017,
+      "role": "Full-Stack & Mobile Developer",
+      "relevance": 58,
+      "description": "Business apps and mobile experiences for local clients (iOS/Android).",
+      "context": "Ship pragmatic solutions under tight budgets and timelines.",
+      "challenge": "Maintain quality while delivering fast for small teams.",
+      "solution": "Laravel APIs; React/Hybrid mobile; shared UI kits; light CI to prevent regressions.",
+      "impacts": [
+        "Predictable delivery with maintainable codebases.",
+        "Reusable modules accelerated feature development.",
+        "Handover docs enabled teams to operate independently."
+      ],
+      "image": "https://heroui.com/images/card-example-1.jpeg",
+      "tags": ["frontend", "backend", "mobile", "architecture", "system design", "design", "ios", "android"],
+      "tech": ["Laravel", "MySQL", "Redis", "Docker"]
     }
-]
+  ]

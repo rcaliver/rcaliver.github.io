@@ -7,6 +7,7 @@ import { PageSubtitle } from "@/components/PageSubtitle";
 import { use } from "react";
 import { Image } from "@heroui/image";
 import { Accordion, AccordionItem } from "@heroui/accordion";
+import { Chip } from "@heroui/chip";
 
 export default function Work({ params }: { params: Promise<{ id: string }> }) {
     const { id } = use(params);
@@ -30,39 +31,52 @@ export default function Work({ params }: { params: Promise<{ id: string }> }) {
                 <PageTitle>{project.title}</PageTitle>
                 <PageSubtitle>{project.description}</PageSubtitle>
 
-                <Accordion defaultSelectedKeys={["1"]}>
-                    <AccordionItem key="1" aria-label="Overview" title="Overview">
-                        <p>{project.description}</p>
-                    </AccordionItem>
-                    <AccordionItem key="2" aria-label="Technical Details" title="Technical Details">
-                        <ul>
-                            {project.tech.map(tech => (
-                                <li key={tech}>{tech}</li>
-                            ))}
-                        </ul>
-                    </AccordionItem>
-                    <AccordionItem key="3" aria-label="Features" title="Features">
-                        <ul>
-                            {project.tags.map(tag => (
-                                <li key={tag}>{tag}</li>
-                            ))}
-                        </ul>
-                    </AccordionItem>
-                    <AccordionItem key="4" aria-label="Key Achievements" title="Key Achievements">
-                        <ul>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</li>
-                        </ul>
-                    </AccordionItem>
-                    <AccordionItem key="5" aria-label="Screenshots" title="Screenshots">
-                        <ul>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</li>
-                        </ul>
-                    </AccordionItem>
-                </Accordion>
+                <div className="flex flex-row justify-center gap-4 my-13">
+                    <p className="font-bold">{project.role} - {project.year}</p>
+                </div>
+
+                <div className="flex flex-row justify-center gap-4 my-13">
+                    {project.tags.map(tag => (
+                        <Chip key={tag} variant="flat" color="secondary">{tag}</Chip>
+                    ))}
+                </div>
+
+                <div className="mb-4">
+                    <p className="font-bold">Context</p>
+                    <p className="font-medium text-white/80">{project.context}</p>
+                </div>
+                <div className="mb-4">
+                    <p className="font-bold">Challenge</p>
+                    <p className="font-medium text-white/80">{project.challenge}</p>
+                </div>
+                <div className="mb-4">
+                    <p className="font-bold">Solution</p>
+                <p className="font-medium text-white/80">{project.solution}</p>
+                </div>
+                <div className="mb-4">
+                    <p className="font-bold">Impact</p>
+                    <ul className="list-disc list-inside text-white/80">
+                        {project.impacts.map(impact => (
+                            <li key={impact}>{impact}</li>
+                        ))}
+                    </ul>
+                </div>
+                <div className="mb-4">
+                    <p className="font-bold">Technical Details</p>
+                    <ul className="list-disc list-inside text-white/80">
+                        {project.tech.map(tech => (
+                            <li key={tech}>{tech}</li>
+                        ))}
+                    </ul>
+                </div>
+                <div className="mb-4">
+                    <p className="font-bold">Screenshots</p>
+                    <ul className="list-disc list-inside text-white/80">
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</li>
+                    </ul>
+                </div>
             </Container>
         </div>
     )

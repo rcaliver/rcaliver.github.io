@@ -6,7 +6,7 @@ export function NavbarComponent() {
     <Navbar isBordered>
       <NavbarBrand>
         <Link href="/">
-          <p className="text-2xl font-bold">caliver</p>
+          <p className="text-2xl text-primary font-bold">caliver</p>
         </Link>
       </NavbarBrand>
 
