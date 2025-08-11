@@ -1,0 +1,58 @@
+[
+    {
+        "id": "showup1",
+        "title": "SHOWUP1",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "image": "https://heroui.com/images/card-example-1.jpeg",
+        "tags": ["frontend", "backend", "infrastructure", "design", "system design", "software architecture", "ios", "android"],
+        "tech": ["Laravel 12", "Next.js", "Tailwind CSS", "MySQL", "Redis", "Docker", "AWS", "CI/CD", "Grafana", "Prometheus", "OpenTelemetry"]
+    },
+    {
+        "id": "agency-analytics",
+        "title": "Agency Analytics",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "image": "https://heroui.com/images/card-example-2.jpeg",
+        "tags": ["frontend", "backend", "artificial intelligence", "database optimization"],
+        "tech": ["Laravel 12", "React", "MySQL", "Redis", "GCP", "Grafana", "Prometheus", "OpenTelemetry"]
+    },
+    {
+        "id": "pixieset",
+        "title": "Pixieset",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "image": "https://heroui.com/images/card-example-3.jpeg",
+        "tags": ["frontend", "backend", "infrastructure", "system design", "software architecture"],
+        "tech": ["Laravel 12", "MySQL", "Redis", "GCP", "Grafana", "Prometheus", "OpenTelemetry"]
+    },
+    {
+        "id": "carlton-one-engagement",
+        "title": "CarltonOne Engagement",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "image": "https://heroui.com/images/card-example-4.jpeg",
+        "tags": ["frontend", "backend", "data analysis"],
+        "tech": ["Laravel 12", "MySQL", "Redis", "GCP", "Grafana", "Prometheus", "OpenTelemetry"]
+    },
+    {
+        "id": "mpac",
+        "title": "Ministério Público do Acre",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "image": "https://heroui.com/images/card-example-5.jpeg",
+        "tags": ["frontend", "backend", "mobile", "infrastructure", "system design", "software architecture", "design"],
+        "tech": ["Laravel 12", "MySQL", "Redis", "GCP", "Grafana", "Prometheus", "OpenTelemetry"]
+    },
+    {
+        "id": "challenge-intercambio",
+        "title": "Challenge Intercambio",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "image": "https://heroui.com/images/card-example-6.jpeg",
+        "tags": ["frontend", "backend", "software architecture", "infrastructure", "system design", "design"],
+        "tech": ["Laravel 12", "MySQL", "Redis", "GCP", "Grafana", "Prometheus", "OpenTelemetry"]
+    },
+    {
+        "id": "dub-solucoes",
+        "title": "Dub Soluções",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "image": "https://heroui.com/images/card-example-1.jpeg",
+        "tags": ["frontend", "backend", "mobile", "software architecture", "system design", "design", "ios", "android"],
+        "tech": ["Laravel 12", "MySQL", "Redis", "GCP", "Grafana", "Prometheus", "OpenTelemetry"]
+    }
+]

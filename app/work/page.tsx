@@ -3,77 +3,59 @@
 import { Container } from "@/components/Container";
 import { PageSubtitle } from "@/components/PageSubtitle"
 import { PageTitle } from "@/components/PageTitle"
-import { Card, CardHeader } from "@heroui/card";
+import { Card, CardBody, CardFooter, CardHeader } from "@heroui/card";
 import { Image } from "@heroui/image";
 import { Chip } from "@heroui/chip";
 import Link from "next/link";
-
-export const projects = [
-    {
-        id: "showup1-web",
-        title: "SHOWUP1 - Web",
-        type: "web",
-        client: "SHOWUP1",
-        description: "ShowUp is a platform for creating and managing events.",
-        image: "https://heroui.com/images/card-example-4.jpeg",
-        tags: ["frontend", "backend", "software architecture", "web"],
-        tech: ["Laravel 12", "Next.js", "Tailwind CSS", "MySQL", "Redis", "Docker", "AWS", "CI/CD", "Grafana", "Prometheus", "OpenTelemetry"],
-    },
-    {
-        id: "showup1-mobile",
-        title: "SHOWUP1 - Mobile",
-        type: "mobile",
-        client: "SHOWUP1",
-        description: "ShowUp is a platform for creating and managing events.",
-        image: "https://heroui.com/images/card-example-4.jpeg",
-        tags: ["frontend", "backend", "software architecture", "mobile"],
-        tech: ["React Native", "TypeScript", "Expo", "Firebase", "AWS", "CI/CD", "Grafana", "Prometheus", "OpenTelemetry"],
-    },
-    {
-        id: "ai-integration",
-        title: "AI Integration",
-        type: "web",
-        client: "Agency Analytics",
-        description: "Agency Analytics is a platform for creating and managing events.",
-        image: "https://heroui.com/images/card-example-4.jpeg",
-        tags: ["frontend", "backend", "software architecture", "data analysis", "web"],
-        tech: ["Laravel 12", "React", "MySQL", "Redis", "GCP", "Grafana", "Prometheus", "OpenTelemetry"],
-    },
-    {
-        id: "database-optimization",
-        title: "Database Optimization",
-        type: "server",
-        client: "Agency Analytics",
-        description: "Agency Analytics is a platform for creating and managing events.",
-        image: "https://heroui.com/images/card-example-4.jpeg",
-        tags: ["frontend", "backend", "software architecture", "data analysis", "server"],
-        tech: ["Laravel 12", "MySQL", "Redis", "GCP", "Grafana", "Prometheus", "OpenTelemetry"],
-    },
-]
+import { Button } from "@heroui/react";
+import projects from "@/public/projects.json";
 
 export default function Work() {
   return (
     <Container>
-      <PageTitle>Recent work</PageTitle>
+        <PageTitle>Recent work</PageTitle>
         <PageSubtitle>Explore case studies of projects that showcase tech expertise and business impact</PageSubtitle>
 
-        <div className="grid mt-13 grid-cols-2 gap-4">
+        <div className="grid mt-13 grid-cols-3 gap-4">
             {projects.map((project) => (
-                <Card as={Link} href={`/work/${project.id}`} key={project.id} className="rounded-lg h-[300px] overflow-hidden">
-                    <CardHeader className="absolute z-10 top-1 flex-col items-start!">
+                <Card
+                    key={project.id}
+                    className="rounded-lg overflow-hidden"
+                    isBlurred
+                >
+                    <CardHeader className="flex-col h-[200px] overflow-hidden">
+                        <Image
+                            alt={project.title}
+                            className="w-full h-full object-cover"
+                            src={project.image}
+                            width={300}
+                            height={200}
+                            removeWrapper
+                        />
+                    </CardHeader>
+                    <CardBody>
                         <p className="text-white/80 uppercase font-bold text-sm">{project.title}</p>
-                        <div className="flex gap-2 mt-1">
+                        <p className="text-white/50 mt-1 text-xs overflow-hidden h-8 line-clamp-2">{project.description}</p>
+                        <div className="flex gap-2 mt-3 flex-wrap">
                             {project.tags.map((tag) => (
-                                <Chip key={tag} color="primary" size="sm">{tag}</Chip>
+                                <Chip key={tag} variant="flat" color="secondary" size="sm">{tag}</Chip>
                             ))}
                         </div>
-                    </CardHeader>
-                    <Image
-                        removeWrapper
-                        alt={project.id}
-                        className="z-0 w-full h-full object-cover rounded-lg"
-                            src={project.image}
-                        />
+                    </CardBody>
+                    <CardFooter>
+                        <Button
+                            as={Link}
+                            href={`/work/${project.id}`}
+                            variant="flat"
+                            color="primary"
+                            className="w-full"
+                            isIconOnly
+                            radius="full"
+                            size="sm"
+                        >
+                            View details
+                        </Button>
+                    </CardFooter>
                 </Card>
             ))}
         </div>

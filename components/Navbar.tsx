@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export function NavbarComponent() {
   return (
-    <Navbar shouldHideOnScroll isBordered>
+    <Navbar isBordered>
       <NavbarBrand>
         <Link href="/">
           <p className="text-2xl font-bold">caliver</p>
