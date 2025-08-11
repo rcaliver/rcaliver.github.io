@@ -38,7 +38,7 @@ export function NavbarComponent() {
         />
         <NavbarBrand>
           <Link href="/">
-            <p className="text-2xl text-primary font-bold">caliver</p>
+            <p className="text-4xl font-fancy text-primary font-bold">caliver</p>
           </Link>
         </NavbarBrand>
       </NavbarContent>

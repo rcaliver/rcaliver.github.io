@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { JetBrains_Mono, Poppins } from "next/font/google";
+import { Birthstone, Dancing_Script, JetBrains_Mono, Poppins } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
 import { NavbarComponent } from "@/components/Navbar";
@@ -16,6 +16,12 @@ const jetbrainsMono = JetBrains_Mono({
   weight: ["400", "500", "600", "700", "800"],
 });
 
+const dancingScript = Dancing_Script({
+  variable: "--font-dancing-script",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
 export const metadata: Metadata = {
   title: "Caliver's Portfolio",
   description: "Caliver's Portfolio made with Next.js",
@@ -29,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body
-        className={`${poppins.variable} ${jetbrainsMono.variable} antialiased`}
+        className={`${poppins.variable} ${jetbrainsMono.variable} ${dancingScript.variable} antialiased`}
       >
         <Providers>
           <div className="min-h-screen">
