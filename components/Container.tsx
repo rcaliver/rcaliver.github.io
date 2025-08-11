@@ -7,7 +7,7 @@ const variants = {
 
 export function Container({ children, size = "lg", margin, ...props }: { children: React.ReactNode, size?: keyof typeof variants, margin?: { top?: string, bottom?: string } } & React.HTMLAttributes<HTMLDivElement>) {
     return (
-        <div className={`${variants[size]} mx-auto ${margin?.top} ${margin?.bottom}`} {...props}>
+        <div className={`${variants[size]} px-4 sm:px-2 mx-auto ${margin?.top} ${margin?.bottom}`} {...props}>
             {children}
         </div>
     );

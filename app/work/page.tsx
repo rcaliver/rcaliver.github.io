@@ -21,7 +21,7 @@ export default function Work() {
         <PageTitle>Recent work</PageTitle>
         <PageSubtitle>Explore case studies of projects that showcase tech expertise and business impact</PageSubtitle>
 
-        <div className="grid mt-13 grid-cols-3 gap-4">
+        <div className="grid mt-8 sm:mt-13 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {sortedProjects.map((project) => (
                 <Card
                     key={project.id}

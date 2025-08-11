@@ -16,7 +16,6 @@ export default function Work({ params }: { params: Promise<{ id: string }> }) {
 
     return (
         <div>
-            {/* Hero full-bleed com overlay */}
             <section className="relative w-full">
                 <div className="relative w-full aspect-[4/3] md:aspect-[16/9] overflow-hidden">
                     <Image
@@ -40,12 +39,7 @@ export default function Work({ params }: { params: Promise<{ id: string }> }) {
             </section>
 
             <Container>
-
-                <div className="flex flex-row justify-center gap-4 my-13">
-                    <p className="font-bold">{project.role} - {project.year}</p>
-                </div>
-
-                <div className="flex flex-row justify-center gap-4 my-13">
+                <div className="flex flex-wrap justify-center gap-4 my-13">
                     {project.tags.map(tag => (
                         <Chip key={tag} variant="flat" color="secondary">{tag}</Chip>
                     ))}
