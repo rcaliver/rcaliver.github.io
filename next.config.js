@@ -1,5 +1,11 @@
 module.exports = {
-    images: {
-      remotePatterns: [new URL('https://heroui.com/images/**')],
-    },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'heroui.com',
+        pathname: '/images/**',
+      },
+    ],
+  },
 }
