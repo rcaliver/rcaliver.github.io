@@ -3,8 +3,8 @@
 import { Container } from "@/components/Container";
 import projects from "@/public/projects.json";
 import { use } from "react";
-import Image from "next/image";
 import { Chip } from "@heroui/chip";
+import Hero from "@/components/Hero";
 
 export default function Work({ params }: { params: Promise<{ id: string }> }) {
     const { id } = use(params);
@@ -16,29 +16,19 @@ export default function Work({ params }: { params: Promise<{ id: string }> }) {
 
     return (
         <div>
-            <section className="relative w-full">
-                <div className="relative w-full aspect-[4/3] md:aspect-[16/9] overflow-hidden">
-                    <Image
-                        src={project.image}
-                        alt={project.title}
-                        fill
-                        priority
-                        sizes="100vw"
-                        className="object-cover"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black/60" />
-                    <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
-                        <h1 className="font-sans font-bold text-white uppercase text-5xl md:text-7xl tracking-tight">
-                            {project.title}
-                        </h1>
-                        <p className="text-lg mt-6 font-mono max-w-2xl text-white/85">
-                            {project.description}
-                        </p>
-                    </div>
-                </div>
-            </section>
+            <Hero
+                src={project.image}
+                alt={(project as any).imageAlt ?? project.title}
+                title={project.title}
+                subtitle={project.description}
+                highlightWord={(project as any).hero?.highlightWord}
+                overlayStrength={(project as any).hero?.overlayStrength ?? "medium"}
+                primaryCta={{ href: "/contact", label: "Get in touch" }}
+                secondaryCta={{ href: "/work", label: "View all work" }}
+                scrollToId="case-content"
+            />
 
-            <Container>
+            <Container id="case-content">
                 <div className="flex flex-wrap justify-center gap-4 my-13">
                     {project.tags.map(tag => (
                         <Chip key={tag} variant="flat" color="secondary">{tag}</Chip>

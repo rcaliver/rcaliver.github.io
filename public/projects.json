@@ -16,6 +16,8 @@
         "Clear product story that differentiates from classic gallery tools."
       ],
       "image": "https://heroui.com/images/card-example-1.jpeg",
+      "imageAlt": "Câmera e itens de fotografia organizados sobre fundo escuro",
+      "hero": { "overlayStrength": "medium", "highlightWord": "Lensly" },
       "tags": ["saas", "ai", "semantic search", "ux", "photo curation"],
       "tech": ["Laravel 12", "Next.js", "Tailwind CSS", "PostgreSQL", "Redis", "Docker", "AWS S3/CloudFront", "OpenAI", "CLIP", "CI/CD"]
     },
@@ -36,6 +38,8 @@
         "Actionable insights into hot paths thanks to tracing/metrics."
       ],
       "image": "https://heroui.com/images/card-example-2.jpeg",
+      "imageAlt": "Dashboard e gráficos representando analytics e IA",
+      "hero": { "overlayStrength": "medium", "highlightWord": "AI" },
       "tags": ["backend", "ai", "data aggregation", "caching"],
       "tech": ["Laravel 12", "React", "MySQL", "Redis", "GCP", "OpenAI", "Grafana", "Prometheus", "OpenTelemetry"]
     },
@@ -56,6 +60,8 @@
         "Risk-aware rollouts for high-traffic releases."
       ],
       "image": "https://heroui.com/images/card-example-3.jpeg",
+      "imageAlt": "Ferramentas de fotografia e layout limpo",
+      "hero": { "overlayStrength": "medium", "highlightWord": "Pixieset" },
       "tags": ["frontend", "backend", "infrastructure", "system design"],
       "tech": ["Laravel 12", "MySQL", "Redis", "GCP", "Docker", "Grafana", "Prometheus", "OpenTelemetry"]
     },
@@ -76,6 +82,8 @@
         "Repeatable prompts and policies to prevent drift."
       ],
       "image": "https://heroui.com/images/card-example-6.jpeg",
+      "imageAlt": "Interface com agentes e automação conectando ferramentas",
+      "hero": { "overlayStrength": "medium", "highlightWord": "Orchestrator" },
       "tags": ["automation", "ai agents", "docs-as-code"],
       "tech": ["n8n", "OpenAI", "Anthropic", "Notion API", "GitHub API", "Slack API", "Typeform"]
     },
@@ -96,6 +104,8 @@
         "Reduced deployment friction with CI/CD."
       ],
       "image": "https://heroui.com/images/card-example-1.jpeg",
+      "imageAlt": "Aplicativo social com cartões de vídeo em destaque",
+      "hero": { "overlayStrength": "medium", "highlightWord": "SHOWUP1" },
       "tags": ["frontend", "backend", "infrastructure", "design", "system design", "architecture", "ios", "android"],
       "tech": ["Laravel 12", "Next.js", "Tailwind CSS", "MySQL", "Redis", "Docker", "AWS", "CI/CD", "Grafana", "Prometheus", "OpenTelemetry"]
     },
@@ -116,6 +126,8 @@
         "Packaged automations keep scope aligned from intake to backlog."
       ],
       "image": "https://heroui.com/images/card-example-5.jpeg",
+      "imageAlt": "Catálogo digital de templates e serviços",
+      "hero": { "overlayStrength": "medium", "highlightWord": "Products" },
       "tags": ["productized services", "templates", "white-label"],
       "tech": ["Laravel 12", "Next.js", "Tailwind CSS", "PostgreSQL", "Redis", "Docker", "AWS", "n8n", "CI/CD"]
     },
@@ -135,6 +147,8 @@
         "Improved visibility on partner integrations via metrics/traces."
       ],
       "image": "https://heroui.com/images/card-example-4.jpeg",
+      "imageAlt": "Integrações corporativas e fluxos de trabalho",
+      "hero": { "overlayStrength": "medium", "highlightWord": "Engagement" },
       "tags": ["backend", "integrations", "data"],
       "tech": ["Laravel", "MySQL", "Redis", "Docker", "GCP", "Grafana", "Prometheus", "OpenTelemetry"]
     },
@@ -155,6 +169,8 @@
         "Better onboarding thanks to documented processes."
       ],
       "image": "https://heroui.com/images/card-example-5.jpeg",
+      "imageAlt": "Painéis administrativos e dispositivos móveis",
+      "hero": { "overlayStrength": "medium", "highlightWord": "MPAC" },
       "tags": ["frontend", "backend", "mobile", "infrastructure", "system design", "architecture", "design"],
       "tech": ["Laravel", "MySQL", "Redis", "Docker", "Grafana", "Prometheus", "OpenTelemetry"]
     },
@@ -175,6 +191,8 @@
         "Higher reliability compared to legacy spreadsheets."
       ],
       "image": "https://heroui.com/images/card-example-6.jpeg",
+      "imageAlt": "Plataforma de educação e fluxo de vendas",
+      "hero": { "overlayStrength": "medium", "highlightWord": "Challenge" },
       "tags": ["frontend", "backend", "architecture", "infrastructure", "system design", "design"],
       "tech": ["Laravel", "MySQL", "Redis", "Docker"]
     },
@@ -194,6 +212,8 @@
         "Handover docs enabled teams to operate independently."
       ],
       "image": "https://heroui.com/images/card-example-1.jpeg",
+      "imageAlt": "Aplicativos de negócios e soluções móveis",
+      "hero": { "overlayStrength": "medium", "highlightWord": "Dub" },
       "tags": ["frontend", "backend", "mobile", "architecture", "system design", "design", "ios", "android"],
       "tech": ["Laravel", "MySQL", "Redis", "Docker"]
     }
