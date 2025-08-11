@@ -1,43 +1,22 @@
-import Link from "next/link";
-import { PageTitle } from "@/components/PageTitle";
-import { PageSubtitle } from "@/components/PageSubtitle";
-import { Container } from "@/components/Container";
-import { Button } from "@heroui/button";
+import Hero from "@/components/Hero";
 
 export default function Home() {
   return (
-    <Container margin={{ top: "sm:mt-36" }}>
-      <PageTitle>Hey, I&apos;m Rodrigo Silva but you can call me <span className="text-primary">Caliver</span>!</PageTitle>
-      <PageSubtitle>I&apos;m a full stack developer with 12+ years of experience and an aspiring software architect</PageSubtitle>
+    <div>
+      <Hero
+        src="https://heroui.com/images/card-example-2.jpeg"
+        alt="Abstract dark background for portfolio hero"
+        title={"Hey, I'm Rodrigo Silva but you can call me Caliver!"}
+        highlightWord="Caliver"
+        subtitle={"I'm a full stack developer with 12+ years of experience and an aspiring software architect"}
+        overlayStrength="medium"
+        primaryCta={{ href: "/work", label: "See my work" }}
+        secondaryCta={{ href: "/contact", label: "Contact me" }}
+        scrollToId="home-content"
+      />
 
-      <Container size="md" margin={{ top: "sm:mt-13", bottom: "sm:mb-13" }}>
-        <div className="flex flex-col sm:flex-row items-center sm:justify-between gap-4 text-center">
-          <div className="flex items-center gap-2">
-            <Button
-              as={Link}
-              href="/work"
-              variant="ghost"
-              color="primary"
-              size="lg"
-              className="text-lg font-mono uppercase"
-            >
-              See my work
-            </Button>
-          </div>
-          <div className="flex items-center gap-2">
-            <Button
-              as={Link}
-              href="/contact"
-              variant="ghost"
-              color="primary"
-              size="lg"
-              className="text-lg font-mono uppercase"
-            >
-              Contact me
-            </Button>
-          </div>
-        </div>
-      </Container>
-    </Container>
+      {/* Placeholder para próximas seções da home */}
+      <div id="home-content" />
+    </div>
   );
 }
