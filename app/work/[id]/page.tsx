@@ -6,6 +6,35 @@ import { use } from "react";
 import { Chip } from "@heroui/chip";
 import Hero from "@/components/Hero";
 
+type OverlayStrength = "soft" | "medium" | "strong";
+
+type Project = {
+    id: string;
+    image: string;
+    imageAlt: string;
+    title: string;
+    description: string;
+    hero: {
+        highlightWord: string;
+        overlayStrength: OverlayStrength;
+    };
+    tags: string[];
+    context: string;
+    challenge: string;
+    solution: string;
+    impacts: string[];
+    tech: string[];
+    year: number;
+    role: string;
+    relevance: number;
+    link?: string;
+    github?: string;
+    video?: string;
+    images?: string[];
+    imagesAlt?: string[];
+    imagesDescription?: string[];
+}
+
 export default function Work({ params }: { params: Promise<{ id: string }> }) {
     const { id } = use(params);
     const project = projects.find((project) => project.id === id);
@@ -18,13 +47,13 @@ export default function Work({ params }: { params: Promise<{ id: string }> }) {
         <div>
             <Hero
                 src={project.image}
-                alt={(project as any).imageAlt ?? project.title}
+                alt={project.imageAlt ?? project.title}
                 title={project.title}
                 subtitle={project.description}
-                highlightWord={(project as any).hero?.highlightWord}
-                overlayStrength={(project as any).hero?.overlayStrength ?? "medium"}
-                primaryCta={{ href: "/contact", label: "Get in touch" }}
-                secondaryCta={{ href: "/work", label: "View all work" }}
+                highlightWord={project.hero.highlightWord}
+                overlayStrength={project.hero.overlayStrength as OverlayStrength}
+                primaryCta={{ href: "/contact", label: "Contact me" }}
+                secondaryCta={{ href: "/work", label: "See my work" }}
                 scrollToId="case-content"
             />
 

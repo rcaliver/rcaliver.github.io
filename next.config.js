@@ -6,6 +6,11 @@ module.exports = {
         hostname: 'heroui.com',
         pathname: '/images/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+        pathname: '/**',
+      }
     ],
   },
 }

@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div>
       <Hero
-        src="https://heroui.com/images/card-example-2.jpeg"
+        src="/images/hero.jpg"
         alt="Abstract dark background for portfolio hero"
         title={"Hey, I'm Rodrigo Silva but you can call me Caliver!"}
         highlightWord="Caliver"
@@ -14,9 +14,6 @@ export default function Home() {
         secondaryCta={{ href: "/contact", label: "Contact me" }}
         scrollToId="home-content"
       />
-
-      {/* Placeholder para próximas seções da home */}
-      <div id="home-content" />
     </div>
   );
 }
