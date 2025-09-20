@@ -1,5 +1,6 @@
+import { GoogleAnalytics } from '@next/third-parties/google';
 import type { Metadata } from "next";
-import { Birthstone, Dancing_Script, JetBrains_Mono, Poppins } from "next/font/google";
+import { Dancing_Script, JetBrains_Mono, Poppins } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
 import { NavbarComponent } from "@/components/Navbar";
@@ -32,6 +33,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const GA_MEASUREMENT_ID = process.env.GA_MEASUREMENT_ID || '';
+
   return (
     <html lang="en" className="dark">
       <body
@@ -44,6 +47,8 @@ export default function RootLayout({
             {children}
           </div>
         </Providers>
+
+        <GoogleAnalytics gaId={GA_MEASUREMENT_ID} />
       </body>
     </html>
   );
